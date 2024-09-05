@@ -238,3 +238,79 @@ footer {
 .footer-bottom p {
     margin: 0;
 }
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    header a {
+        font-size: 18px;
+        margin: 5px 0;
+    }
+
+    .parallax h1 {
+        font-size: 3em;
+    }
+
+    .menu-category {
+        flex-direction: column;
+    }
+
+    .menu-category button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .menu-item {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .map-container {
+        height: 300px;
+    }
+
+    .review-card {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 5px;
+    }
+
+    header a {
+        font-size: 16px;
+    }
+
+    .parallax h1 {
+        font-size: 2.5em;
+    }
+
+    .menu-item {
+        padding: 10px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-about,
+    .footer-contact,
+    .footer-social {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .footer-social a {
+        font-size: 20px;
+        margin: 0 5px;
+    }
+}
