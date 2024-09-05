@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #3D3031;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    background-color: #34292a;
+    padding: 20px;
+    color: white;
+}
+
+header a {
+    color: #96623F;
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+}
+
+header a:hover {
+    color: #bd8a5d;
+}
+
+header span {
+    margin-right: 5px;
+}
+
+.parallax {
+    position: relative;
+    height: 400px;
+    background-image: url('./assets/parrallax.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    overflow: hidden;
+}
+
+.parallax h1 {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    font-size: 4em;
+    color: #96623F;
+}
+
+.menu-container {
+    margin: 20px;
+}
+
+.menu-category {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.menu-category button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #3D3031;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 5px;
+    transition: 0.5s ease-in-out;
+}
+
+.menu-category button:hover {
+    background-color: #34292a;
+}
+
+.menu-category button.active {
+    background-color: #34292a;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.menu-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    background-color: #34292a;
+    border-color: #34292a;
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.menu-item h3 {
+    margin: 10px 0;
+    color: #A97D57;
+}
+
+.menu-item p {
+    color: #ccc;
+}
+
+.map-container {
+    width: 100%;
+    height: 400px;
+    margin: 20px 0;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.reviews-section {
+    padding: 20px;
+    background-color: #3D3031;
+    text-align: center;
+}
+
+.reviews-section h2 {
+    margin-top: 0;
+    font-size: 2em;
+}
+
+.reviews-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.review-card {
+    background-color: #34292a;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    border-color: #34292a;
+    box-shadow: 2px 2px 5px #A97D57;
+}
+
+.review-card:hover {
+    transform: scale(1.05);
+}
+
+.review-card img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.review-card h3 {
+    margin: 10px 0 5px;
+    color: #A97D57;
+}
+
+.review-card p {
+    color: #ccc;
+}
+
+footer {
+    background-color: #3D3031;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 3px solid #bd8a5d;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.footer-about,
+.footer-contact,
+.footer-social {
+    margin: 10px;
+    flex: 1;
+}
+
+.footer-about h3,
+.footer-contact h3,
+.footer-social h3 {
+    margin-top: 0;
+    color: #A97D57;
+}
+
+.footer-contact p,
+.footer-about p {
+    margin: 5px 0;
+}
+
+.footer-social a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+.footer-bottom {
+    background-color: #222;
+    padding: 10px 0;
+}
+
+.footer-bottom p {
+    margin: 0;
+}

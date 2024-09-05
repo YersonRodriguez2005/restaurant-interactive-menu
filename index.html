@@ -4,21 +4,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>restaurant interactive menu</title>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>Restaurant Interactive Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100" rel="stylesheet" />
 </head>
 
 <body>
     <header>
-        <a href=""><span class="material-symbols-outlined"></span>Menu</a>
-        <a href="">Nosotros</a>
-        <a href="">Reseñas</a>
-        <a href="">Ubicación</a>
+        <a href="#home"><span class="material-symbols-outlined">home</span> Menu</a>
+        <a href="#about"><span class="material-symbols-outlined">group</span> Nosotros</a>
+        <a href="#review"><span class="material-symbols-outlined">reviews</span> Reseñas</a>
+        <a href="#location"><span class="material-symbols-outlined">location_on</span> Ubicación</a>
     </header>
 
-    <div class="container">
-
+    <div class="parallax">
+        <h1>Menú del Restaurante</h1>
     </div>
+
+    <div class="menu-container">
+        <div class="menu-category">
+            <button class="active" data-category="all">Todo</button>
+            <button data-category="entradas">Entradas</button>
+            <button data-category="principales">Platos Principales</button>
+            <button data-category="postres">Postres</button>
+        </div>
+
+        <div id="home" class="menu-items">
+            <!-- Entradas -->
+            <div class="menu-item" data-category="entradas">
+                <img src="./assets/ensalada.jpg" alt="Ensalada Casera">
+                <h3>Ensalada Casera</h3>
+                <p>Ensalada fresca con lechuga, croutons, queso parmesano y aderezo Caesar.</p>
+            </div>
+            <div class="menu-item" data-category="entradas">
+                <img src="./assets/Bruschetta.jpg" alt="Bruschetta">
+                <h3>Bruschetta</h3>
+                <p>Pan tostado con tomate, albahaca y un toque de aceite de oliva.</p>
+            </div>
+
+            <!-- Platos Principales -->
+            <div class="menu-item" data-category="principales">
+                <img src="./assets/Filete de Res a la Parrilla.jpg" alt="Filete de Res a la Parrilla">
+                <h3>Filete de Res a la Parrilla</h3>
+                <p>Filete de res jugoso a la parrilla con guarnición de vegetales y papas al horno.</p>
+            </div>
+            <div class="menu-item" data-category="principales">
+                <img src="./assets/Pasta Alfredo.jpg" alt="Pasta Alfredo">
+                <h3>Pasta Alfredo</h3>
+                <p>Pasta con una cremosa salsa Alfredo, acompañada de pollo y champiñones.</p>
+            </div>
+
+            <!-- Postres -->
+            <div class="menu-item" data-category="postres">
+                <img src="./assets/Tarta de Queso.jpg" alt="Tarta de Queso">
+                <h3>Tarta de Queso</h3>
+                <p>Deliciosa tarta de queso con base de galleta y cobertura de frutas del bosque.</p>
+            </div>
+            <div class="menu-item" data-category="postres">
+                <img src="./assets/Brownie de Chocolate.jpg" alt="Brownie de Chocolate">
+                <h3>Brownie de Chocolate</h3>
+                <p>Brownie de chocolate intenso servido con una bola de helado de vainilla.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="location" class="map-container">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d996.6408659461752!2d-75.83517368106126!3d2.3144964873328457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e252d28ef815019%3A0xb53f428a3d759bd!2sSol%20y%20Luna%20Gastrobar%20Un%20ambiente%20familiar!5e0!3m2!1ses-419!2sco!4v1725569636771!5m2!1ses-419!2sco"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <div class="reviews-section">
+        <h2>Reseñas de Nuestros Clientes</h2>
+        <div class="reviews-container">
+            <div class="review-card">
+                <img src="./assets/avatar1.jpg" alt="Avatar 1">
+                <h3>Juan Pérez</h3>
+                <p>"La comida estaba deliciosa y el servicio excelente. Definitivamente volveré."</p>
+            </div>
+            <div class="review-card">
+                <img src="./assets/avatar2.jpg" alt="Avatar 2">
+                <h3>María López</h3>
+                <p>"Un ambiente acogedor y una experiencia gastronómica maravillosa. Recomendado al 100%."</p>
+            </div>
+            <div class="review-card">
+                <img src="./assets/avatar3.jpg" alt="Avatar 3">
+                <h3>Carlos Gómez</h3>
+                <p>"El filete de res a la parrilla es increíble. Las mejores costillas que he probado."</p>
+            </div>
+            <div class="review-card">
+                <img src="./assets/avatar4.jpg" alt="Avatar 4">
+                <h3>Ana Martínez</h3>
+                <p>"Un lugar perfecto para una cena especial. Los postres son de otro nivel."</p>
+            </div>
+            <div class="review-card">
+                <img src="./assets/avatar5.jpg" alt="Avatar 5">
+                <h3>Pedro Sánchez</h3>
+                <p>"El servicio fue muy atento y la comida llegó rápidamente. Una excelente experiencia."</p>
+            </div>
+        </div>
+    </div>    
+
+    <footer id="about">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>Sobre Nosotros</h3>
+                <p>Somos un restaurante comprometido con la calidad y el sabor. Ofrecemos una amplia variedad de platos deliciosos en un ambiente acogedor.</p>
+            </div>
+            <div class="footer-contact">
+                <h3>Contacto</h3>
+                <p>Teléfono: +123 456 789</p>
+                <p>Email: contacto@restaurante.com</p>
+                <p>Dirección: Calle Principal 123, Ciudad, País</p>
+            </div>
+            <div class="footer-social">
+                <h3>Síguenos</h3>
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                    <span class="material-symbols-outlined">facebook</span>
+                </a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                    <span class="material-symbols-outlined">twitter</span>
+                </a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                    <span class="material-symbols-outlined">instagram</span>
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Restaurante. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
 </body>
 
 </html>
